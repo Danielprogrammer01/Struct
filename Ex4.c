@@ -20,7 +20,7 @@ int main()
     setlocale(LC_ALL, "portuguese");
 
     int i;
-    int quantidadeDePessoas = 1;
+    int quantidadeDePessoas = 5;
     struct dados_pessoais pessoa[quantidadeDePessoas];
 
     for (i = 0; i < quantidadeDePessoas; i++)
