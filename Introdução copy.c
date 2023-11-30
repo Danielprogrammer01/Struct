@@ -16,7 +16,7 @@ int main()
 {
     setlocale(LC_ALL, "portuguese");
 
-    // struct dados_aluno --> tipo 
+    // struct dados_aluno --> tipos dos dados  
     // aluno --> variável
 
     struct dados_aluno aluno;
