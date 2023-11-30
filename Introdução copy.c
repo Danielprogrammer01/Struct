@@ -6,23 +6,31 @@
 #include <time.h>
 #include <limits.h>
 
+struct dados_aluno
+{
+    char nome[200];
+    int idade;
+};
+
 int main()
 {
     setlocale(LC_ALL, "portuguese");
 
-    char nome[200];
-    int idade;
-    
+    // struct dados_aluno --> tipo 
+    // aluno --> variável
+
+    struct dados_aluno aluno;
+
     printf("Digite o nome do aluno: ");
-    gets(nome);
+    gets(aluno.nome);
     
     printf("\nDigite a idade do aluno: ");
-    scanf("%d", &idade);
+    scanf("%d", &aluno.idade);
 
     system("cls || clear");
 
-    printf("\nNome: %s", nome);
-    printf("\nIdade: %d", idade);
+    printf("\nNome: %s", aluno.nome);
+    printf("\nIdade: %d", aluno.idade);
     printf("\n");
 
     return 0;
